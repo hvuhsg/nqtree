@@ -18,9 +18,18 @@ import (
 )
 
 func main() {
-	dp1 := nqtree.DataPoint{Position: nqtree.Point{Dimensions: []float64{50, 50}}, Data: "In-HyperSphere-and-Orthotope"}
-	dp2 := nqtree.DataPoint{Position: nqtree.Point{Dimensions: []float64{75, 75}}, Data: "In-Orthotope"}
-	dp3 := nqtree.DataPoint{Position: nqtree.Point{Dimensions: []float64{25, 25}}, Data: "In-HyperSphere"}
+	dp1 := nqtree.DataPoint{
+		Position: nqtree.Point{Dimensions: []float64{50, 50}},
+		Data: "In-HyperSphere-and-Orthotope"
+	}
+	dp2 := nqtree.DataPoint{
+		Position: nqtree.Point{Dimensions: []float64{75, 75}},
+		Data: "In-Orthotope"
+	}
+	dp3 := nqtree.DataPoint{
+		Position: nqtree.Point{Dimensions: []float64{25, 25}},
+		Data: "In-HyperSphere"
+	}
 
 	tree := nqtree.TreeNode{
 		Rect: nqtree.Orthotope{
